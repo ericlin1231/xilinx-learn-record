@@ -1,0 +1,11 @@
+create_clock -name clk_125M -period 8.000 [get_ports clk_125M]
+set_property -dict {PACKAGE_PIN H16 IOSTANDARD LVCMOS33} [get_ports clk_125M]
+
+set_property -dict {PACKAGE_PIN L16 IOSTANDARD TMDS_33} [get_ports HDMI_CLK_P]
+set_property -dict {PACKAGE_PIN L17 IOSTANDARD TMDS_33} [get_ports HDMI_CLK_N]
+set_property -dict {PACKAGE_PIN K17 IOSTANDARD TMDS_33} [get_ports HDMI_D0_P]
+set_property -dict {PACKAGE_PIN K18 IOSTANDARD TMDS_33} [get_ports HDMI_D0_N]
+set_property -dict {PACKAGE_PIN K19 IOSTANDARD TMDS_33} [get_ports HDMI_D1_P]
+set_property -dict {PACKAGE_PIN J19 IOSTANDARD TMDS_33} [get_ports HDMI_D1_N]
+set_property -dict {PACKAGE_PIN J18 IOSTANDARD TMDS_33} [get_ports HDMI_D2_P]
+set_property -dict {PACKAGE_PIN H18 IOSTANDARD TMDS_33} [get_ports HDMI_D2_N]
