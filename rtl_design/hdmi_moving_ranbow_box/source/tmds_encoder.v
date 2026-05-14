@@ -21,12 +21,11 @@ module tmds_encoder (
         q_m[8] = ~use_xnor;
     end
 
-    // Stage 2: DC 平衡（在 clock edge）
     wire [3:0] n1qm = q_m[0] + q_m[1] + q_m[2] + q_m[3]
                     + q_m[4] + q_m[5] + q_m[6] + q_m[7];
     wire [3:0] n0qm = 4'd8 - n1qm;
 
-    reg signed [4:0] cnt;   // 累積 disparity
+    reg signed [4:0] cnt;
 
     always @(posedge clk) begin
         if (!de) begin
