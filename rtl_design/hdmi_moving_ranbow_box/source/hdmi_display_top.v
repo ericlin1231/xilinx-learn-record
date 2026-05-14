@@ -54,7 +54,6 @@ hdmi_out u_hdmi_out
 clk_wiz_0   u_clk
 (
     .clk_in1            (clk_125M),
-    .reset              (1'b0),
     .clk_out1           (pixclk),
     .clk_out2           (serclk),
     .locked             (lock)
